@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<style>
+    .bat{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="bat">
+        <h1> Bat Ball Stump Game</h1>
+        <button onclick="choice();
+      
+        let result;
+        if(computer==='ball'){
+            result='user win the game'
+        }
+        else if(computer==='bat'){
+         result='Tie'
+        }else{
+            result='Computer Own the Game'
+        }
+        
+        
+        alert(`You have choose Bat And Computer choice the ${computer} and ${result}`)
+        
+        ">Bat</button>
+        
+        
+        <button >Ball</button>
+        <button>Stumps</button>   
+       
+<script>
+let computer;
+
+function choice(){
+    let randomno=Math.random()*3;
+        if(randomno>0 && randomno<=1){
+            computer='bat'
+        }
+        else if(randomno=>1&&randomno<=2){
+          computer='ball'
+        }
+        else{
+            computer='stump'
+        }
+        
+}
+</script>
+    </body>
+</html>
